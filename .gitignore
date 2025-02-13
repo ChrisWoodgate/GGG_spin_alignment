@@ -37,3 +37,6 @@
 
 # But not the license file
 !LICENSE.txt
+
+# Or the example input
+!input.txt
