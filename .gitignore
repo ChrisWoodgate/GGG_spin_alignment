@@ -1,0 +1,39 @@
+# Ignore compiled code
+*.o
+
+# Ignore output picture
+*.png
+
+# Ignore slurm outputs
+*.out
+
+# Ignore Fortran modules
+*.mod
+
+# Ignore netCDF output
+*.nc
+
+# Ignore netCDF output
+*.dat
+
+# Ignore xyz output
+*.xyz
+
+# Ignore pdfs
+*.pdf
+
+# Ignore executables
+*.exe
+*.x
+
+# Ignore executable files
+*.run
+
+# Ignore csv files
+*.csv
+
+# Ignore text files
+*.txt
+
+# But not the license file
+!LICENSE.txt
