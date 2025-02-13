@@ -40,3 +40,6 @@
 
 # Or the example input
 !input.txt
+
+# Or the GGG unit cells
+!positions/*
