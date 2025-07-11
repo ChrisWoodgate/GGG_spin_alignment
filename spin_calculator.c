@@ -11,20 +11,20 @@
 int main(int argc, char **argv)
 {
 	/* Parameters to be read in from input file */
-	int N_ions, N_unit;				//Number of ions in original cell and in the system
-	double alpha_ew;				//Value of alpha to be used
-	int L_max;						//L_max
-	int k_max;						//k_max
-	double Theta;					// Theta
-	double Phi;						// and Phi set direction of external field
-	double Mag;						// External Field (T)
+	int N_ions, N_unit; // Number of ions in original cell and in the system
+	double alpha_ew;    // Value of alpha parameter to be used in Ewald summation
+	int L_max;          // L_max and 
+	int k_max;          // k_max are also parameters used in the Ewald summation
+	double Theta;       // Theta
+	double Phi;         // and Phi set direction of external field
+	double Mag;         // External Field (T)
 
 	/* Parameters to be read in from command line and default values  */
-	int spin_movement      =    0;		// If 1, Spins moved one by one. If 0, moved together.
-	int pertubation        =    0;		// If 1, Pertubation turned on. If 0, turned off.
-	int N_iter             =   10;		//N_iter
-	double external_field  = 2400;		//External Field (mT)
-	int NCells             =    1;		//Number of unit cells in x, y, z directions
+	int spin_movement      =    0; // If 1, Spins moved one by one. If 0, moved together.
+	int pertubation        =    0; // If 1, Pertubation turned on. If 0, turned off.
+	int N_iter             =   10; // N_iter
+	double external_field  = 2400; // External Field (mT)
+	int NCells             =    1; // Number of unit cells in x, y, z directions
 	
 	/* Read in from input file */
 	read_input(&N_unit ,&alpha_ew, &k_max, &L_max, &Theta, &Phi);
